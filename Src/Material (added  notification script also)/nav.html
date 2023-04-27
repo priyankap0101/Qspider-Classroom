@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH CLASSROOM |online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css&quot; integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./nav.css">
+</head>
+<body>
+    <header class="mainheader"
+    title="ALL MATERIAL AVAILABLE HERE">Tech Classroom
+</header>
+    <nav class="mainnav">
+        <section class="subnav">
+            <DIV class="batchdetails">BATCH DETAILS</DIV>
+            <DIV class="classblock">
+                <a href="">ANNOUNCMENT</a>
+                <i class="fa-solid fa-volume-high"></i>
+                <a href="index.html">MATERIAL</a>
+                <i class="fa-solid fa-book"></i>
+                <a href="">MOCK RATINGS</a>
+                <i class="fa-solid fa-star"></i>
+                <a href="">TASK MASTER</a>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </DIV>
+            
+            <DIV class="Register">JOIN US</DIV>
+            
+            <DIV class="pay">
+                <div class="p">PAY</div>
+                <section class="paydrop">
+                    <h6>FEE</h6><HR class="dropline">
+                    <H6>CHANGE PASSWORD
+                    <i class="fa-solid fa-key"></i>
+                </H6>
+                
+                
+                </section>
+            </DIV>
+            <div>
+                <div class="icon" onclick="toggleNotifi()">
+                    <img src="img/bell.png" alt=""> <span>6</span>
+                </div>
+                <div class="notifi-box" id="box">
+                    <h2>Notifications <span>6</span></h2>
+                    <div class="notifi-item">
+                        <img src="img/avatar1.png" alt="img">
+                        <div class="text">
+                           <h4>shri</h4>
+                           <p>hi</p>
+                        </div> 
+                    </div>
+        
+                    <div class="notifi-item">
+                        <img src="img/avatar2.png" alt="img">
+                        <div class="text">
+                           <h4>navin</h4>
+                           <p>done</p>
+                        </div> 
+                    </div>
+        
+                    <div class="notifi-item">
+                        <img src="img/avatar3.png" alt="img">
+                        <div class="text">
+                           <h4>kavi</h4>
+                           <p>okok</p>
+                        </div> 
+                    </div>
+        
+                    <div class="notifi-item">
+                        <img src="img/avatar4.png" alt="img">
+                        <div class="text">
+                           <h4>rani</h4>
+                           <p>had a dinner?</p>
+                        </div> 
+                    </div>
+        
+                    <div class="notifi-item">
+                        <img src="img/avatar5.png" alt="img">
+                        <div class="text">
+                           <h4>ashwini</h4>
+                           <p>notify</p>
+                        </div> 
+                    </div>
+        
+                </div>
+          
+            </div>
+        </section>
+        
+    </nav>
+    
+    <footer style="padding-top:650px;text-align: right;" >
+        <button onclick="raiseHand()"> <img id="hand" src="raise-hand.png"style="display:none"> <img id="hand" src="hand.png" style="display:none"></button> 
+        
+        
+        <script>
+          function raiseHand(){
+              document.getElementById("hand").style.display = "block";
+          }
+        </script>
+        <button onclick="raiseHand()">Raise Hand</button>
+        
+        <script>
+          function raiseHand(){
+              document.getElementById("hand").style.display = "block";
+          }
+        </script>
+        <!-- <div>
+        <BUTTON ID='BUTTON-RAISE-HAND' DISABLED style="color:darkgray; font-weight: bold;">Raise Hand ✋</BUTTON> -->
+      </div>
+      </footer>
+    <section class="image"></section>
+    <article class="contenton"></article>
+
+    <script >
+        var box  = document.getElementById('box');
+var down = false;
+
+
+function toggleNotifi(){
+	if (down) {
+		box.style.height  = '0px';
+		box.style.opacity = 0;
+		down = false;
+	}else {
+		box.style.height  = '510px';
+		box.style.opacity = 1;
+		down = true;
+	}
+}
+    </script>
+</body>
+</html>
+
+
+
+

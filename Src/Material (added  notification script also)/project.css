@@ -1,0 +1,39 @@
+
+.btn1{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    color: black;
+}
+.btn1_stop{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    color: black;
+}
+body {
+    font-family: arial;
+}
+button {
+    padding:10px;
+    background-color:#6a67ce;
+    color: #FFFFFF;
+    border: 0px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+#output {
+    background-color:#F9F9F9;
+    padding:10px;
+    width: 100%;
+    margin-top:20px;
+    line-height:30px;
+}
+.hide {
+    display:none;
+}
+.show {
+    display:block;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Requirement Form</title>
+    <link rel="stylesheet" href="./requirment.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+
+    <header class="mainheader" title="ALL MATERIAL AVAILABLE HERE">
+        Tech Classroom
+      </header>
+      <nav class="mainnav">
+        <section class="subnav">
+          <div class="batchdetails">BATCH DETAILS</div>
+          <div class="classblock">
+            <a href="./REQUIRMENT.html">ANNOUNCMENT</a>
+            <i class="fa-solid fa-volume-high"></i>
+            <a href="">MATERIAL</a>
+            <i class="fa-solid fa-book"></i>
+            <a href="">MOCK RATINGS</a>
+            <i class="fa-solid fa-star"></i>
+            <a href="">TASK MASTER</a>
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <div class="Register">
+            <a href="./join.html" style="color: white;text-decoration: none;font-size: x-large;">JOIN US</a></div>
+  
+          <div class="pay">
+            <div class="p">PAY</div>
+            <section class="paydrop">
+              <h6>FEE</h6>
+              <hr class="dropline" />
+              <h6>
+                CHANGE PASSWORD
+                <i class="fa-solid fa-key"></i>
+              </h6>
+            </section>
+          </div>
+        </section>
+        
+      </nav>
+  
+    <div class="container">
+      <!--Registration Form container-->
+      <div class="registrationcontainer">
+        <!--input fields for registration form-->
+
+        <div class="card" id="card">
+          
+        <h2>
+          <strong>Today's Requirement</strong>
+        </h2>    
+        </div>
+        
+        <div class="batch">
+          <label>
+            <span>Batch Code:</span>
+          <input
+            type="text"
+            id="bcode"
+            name="code "
+            placeholder="ENTER BATCH CODE"
+          />
+        </label>
+        </div>
+        
+        <div class="Reqcode">
+          <label>
+            <span>Requirement Code:</span>
+          <input
+            type="text"
+            id="reqcode"
+            name="equno"
+            placeholder="ENTER REQUIREMENT CODE"
+          />
+        </label>
+        </div>
+
+        <div class="location">
+          <label>
+            <span>Location:</span>
+          <input
+            type="text"
+            id="loc"
+            name="location"
+            placeholder="ENTER LOCATION"
+          />
+        </label>
+        </div>
+
+        <div class="eligiblity">
+          <label>
+            <span>Eligibility:</span>
+          <input
+            type="text"
+            id="elg"
+            name="eligiblity"
+            placeholder="ENTER ELIGIBILITY"
+          />
+        </label>
+        </div>
+        <div class="skills">
+          <label>
+            <span> Skills:</span>
+          <input
+            type="text"
+            id="skills"
+            name="Skills"
+            placeholder="ENTER SKILLS"
+          />
+        </label>
+        </div>
+        
+        <div class="DateInterview">
+            <label> 
+                <span>Date of Interview :</span>
+            <input
+              type="date"
+              id="DOI"
+              name="DteOfInterview"
+              placeholder=""
+            />
+        </label>
+          </div>
+
+          
+        <div class="Details">
+            <label> 
+                <span>Hr contact :</span>
+            <input
+              type="tel"
+              id="details"
+              name="hrdetails"
+              placeholder="HR DETAILS"
+            />
+        </label>
+          </div>
+        
+        <button class="submit">Submit</button>
+      </div>
+      <!--Data displayed in the same screen-->
+      <div class="output">
+        <!--Data stored dynamically inside the container-->
+      </div>
+    </div>
+
+    <script src="./requirment.js"></script>
+  </body>
+</html>

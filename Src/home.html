@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TECH CLASSROOM |online</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      style="height: 10px; width: 10px; border-radius: 20px"
+      href="https://png.pngtree.com/png-vector/20191003/ourmid/pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.jpg"
+    />
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <header class="mainheader" title="ALL MATERIAL AVAILABLE HERE">
+      Tech Classroom
+    </header>
+    <nav class="mainnav">
+      <section class="subnav">
+        <div class="batchdetails"><a href="./batchdetails.html">BATCH DETAILS</a></div>
+        <div class="classblock">
+          <a href="./REQUIRMENT.html">ANNOUNCMENT</a>
+          <i class="fa-solid fa-volume-high"></i>
+          <a href="./material.html">MATERIAL</a>
+          <i class="fa-solid fa-book"></i>
+          <a href="">MOCK RATINGS</a>
+          <i class="fa-solid fa-star"></i>
+          <a href="./taskmaster.html">TASK MASTER</a>
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </div>
+        <div class="Register">
+          <a href="./join.html" style="color: white;text-decoration: none;font-size: x-large;">JOIN US</a></div>
+
+        <div class="pay">
+          <div class="p">PAY</div>
+          <section class="paydrop">
+            <h6>FEE</h6>
+            <hr class="dropline" />
+            <h6>
+              CHANGE PASSWORD
+              <i class="fa-solid fa-key"></i>
+            </h6>
+          </section>
+        </div>
+      </section>
+      
+    </nav>
+
+    <!-- body -->
+    <section class="image">
+      <div style="display: flex">
+        <section class="page1">
+          <label>
+            <h3>Login as:</h3>
+            <br /><br />
+            <input
+              type="radio"
+              id="login"
+              name="login"
+              value=""
+              onclick="student(0)"
+            />&nbsp;&nbsp;Student<br /><br />
+            <input
+              type="radio"
+              id="login"
+              name="login"
+              value=""
+              onclick="trainer(0)"
+            />&nbsp;&nbsp;Trainer<br /><br />
+            <input
+              type="radio"
+              id="login"
+              name="login"
+              value=""
+              onclick="counsellor(0)"
+            />&nbsp;&nbsp;Counsellor<br /><br />
+          </label>
+        </section>
+
+        <section class="page2" id="student" style="background-color: black">
+          <h3>Student Login</h3>
+          <br /><br />
+
+          <form>
+            <label style="color: white; font-size: large"><b>Email ID</b></label
+            ><br /><br />
+            <i class="fa-solid fa-envelope"></i>
+            <input
+              type="text"
+              id="student login"
+              name="student login"
+              placeholder="&nbsp;Enter Email here"
+            /><br /><br />
+            <label
+              style="margin-right: 70px; color: white; font-size: large"
+              for="Contact"
+              ><b>Contact No</b></label
+            ><br /><br />
+            <select
+              style="
+                height: 35px;
+                width: 100px;
+                color: rgb(37, 35, 35);
+                border-radius: 8px;
+                background-color: white;
+              "
+            >
+              <option value="">+91</option>
+              <option value="">+464</option>
+              <option value="">+01</option>
+            </select>
+            <input
+              style="
+                background-color: white;
+                width: 195px;
+                height: 40px;
+                border-radius: 10px;
+                padding-left: 30px;
+              "
+              type="tel"
+              id="Contact"
+              name="Contact"
+              placeholder="Enter Number Here"
+              maxlength="10"
+              minlength="10"
+            /><br /><br /><br />
+
+            <button id="sbtn" onclick="sjoinclass()"
+              style="
+                height: 40px;
+                width: 300px;
+                background-color: white;
+                border-radius: 10px;
+                font-size: X-large;
+                color: rgb(21, 18, 37);
+                border: none;
+                cursor: pointer;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
+              JOIN CLASS
+            </button>
+          </form>
+        </section>
+
+        <section
+          class="page2"
+          style="margin-left: 400x; background-color: black"
+          id="trainer"
+        >
+          <h3>Trainer Login</h3>
+          <br /><br /><br />
+          <form>
+            <label style="color: white; font-size: large"><b>Email ID</b></label
+            ><br /><br />
+            <i class="fa-solid fa-envelope"></i>
+            <input
+              type="text"
+              id="student login"
+              name="student login"
+              placeholder="&nbsp;Enter Email here"
+            /><br /><br />
+            <label style="color: white; font-size: large"><b>Password</b></label
+            ><br /><br />
+            <i class="fa-solid fa-key"></i>
+            <input
+              type="text"
+              id="student login"
+              name="student login"
+              placeholder="&nbsp;Password"
+            /><br /><br />
+            <a href="./announcment.html"><input type="submit" value="startsession" /></a>
+          </form>
+        </section>
+
+        <section
+          class="page2"
+          style="margin-left: 400x; background-color: black"
+          id="counsellor"
+        >
+          <h3>Counsellor Login</h3>
+          <br /><br /><br />
+          <form>
+            <label style="color: white; font-size: large"><b>Email ID</b></label
+            ><br /><br />
+            <i class="fa-solid fa-envelope"></i>
+            <input
+              type="text"
+              id="student login"
+              name="student login"
+              placeholder="&nbsp;Enter Email here"
+            /><br /><br />
+            <label style="color: white; font-size: large"><b>Password</b></label
+            ><br /><br />
+            <i class="fa-solid fa-key"></i>
+            <input
+              type="text"
+              id="student login"
+              name="student login"
+              placeholder="&nbsp;Password"
+            /><br /><br />
+            <input type="submit" value="startsession" />
+          </form>
+        </section>
+      </div>
+    </section>
+    <article class="contenton"></article>
+
+
+    <section class="footerblock">
+      <footer class="">
+          <div class="rowprimary">
+            <div class="column about">
+          
+            <h3>ABOUT TechClassroom</h3>
+          
+             <p>
+              TechClassroom is a top-notch learning solutions organization head quartered in India's IT capital Bangalore.
+              We offer wide range of course in the area of development and testing.
+              A "Finishing School" in different paths, the institute provides young job aspirants the perfect launch-pad to build an excellent rewarding careers in the huge IT hubs.
+            </p>
+          
+            <div class="social">
+              <i class="fa-brands fa-facebook-square"></i>
+              <i class="fa-brands fa-instagram-square"></i>
+              <i class="fa-brands fa-twitter-square"></i>
+              <i class="fa-brands fa-youtube-square"></i>
+              <i class="fa-brands fa-whatsapp-square"></i>
+            </div>
+          </div>
+          
+          <div class="column links">
+          <h3>BRANCHES</h3>
+          
+           <ul>
+          
+            <li>
+             <a href="https://mail.jspiders.com/Basavanagudi-full">Basavanagudi</a>
+            </li>
+            <li>
+             <a href="https://mail.jspiders.com/oldairportroad-fulls">Old Airport Road</a>
+            </li>
+            <li>
+             <a href="https://mail.jspiders.com/rajajinagar-full">Rajajinagar</a>
+            </li>
+            <li>
+             <a href="https://mail.jspiders.com/Banasawadi-full">Hebbal</a>
+            </li>
+            <li>
+              <a href="https://mail.jspiders.com/btm">BTM Layout</a>
+             </li>
+             <li>
+              <a href="https://mail.jspiders.com/mysore-full">Mysore</a>
+             </li>
+             <li>
+              <a href="https://mail.jspiders.com/chennai-vadapalani-full">Chennai-Vadapalani</a>
+             </li>
+             <li>
+              <a href="https://mail.jspiders.com/chennai-chromepet-full">Chennai-Chromepet</a>
+             </li>
+             <li>
+              <a href="https://mail.jspiders.com/pune">Pune Deccan Gymkhana</a>
+             </li>
+             <li>
+              <a href="https://mail.jspiders.com/punehadapsar">Pune Hadapsar</a>
+             </li>
+             <li>
+              <a href="https://mail.jspiders.com/punehadapsar">Pune Wakad</a>
+             </li>
+             
+             </ul>
+          
+          </div>
+          
+          
+          <div class="column links">
+            <h3>BRANCHES</h3>
+             <ul>
+              <li>
+                <a href="https://mail.jspiders.com/mumbai">Mumbai</a>
+               </li>
+               <li>
+                <a href="https://mail.jspiders.com/hyderabad">Hyderabad- JNTU</a>
+               </li>
+               <li>
+                <a href="https://mail.jspiders.com/hyderabadpunjagutta">Hyderabad Punjagutta</a>
+               </li>
+               <li>
+                <a href="">Chandigarh</a>
+               </li>
+               <li>
+                <a href="">Thane</a>
+               </li>
+               <li>
+                <a href="">Bhubaneswar</a>
+               </li>
+               <li>
+                <a href="">Noida</a>
+               </li>
+               <li>
+                <a href="">Bhopal</a>
+               </li>
+               <li>
+                <a href="">Gurgaon</a>
+               </li>
+               <li>
+                <a href="">Velachery</a>
+               </li>
+            </ul>
+          </div>
+          
+          <div class="column subscribe">
+           <h3>QUICK ENQUIRY</h3>
+            <div>
+             <input type="Name" placeholder="Your Name here" />
+             
+            </div>
+            <div>
+              <input type="email" placeholder="Your email id here" />
+             
+             </div>
+             <div>
+              <input type="Mobile Number" placeholder="Your Mobile Number here" />
+              
+             </div>
+             <div>
+             <h4>Message</h4>
+              <textarea></textarea>
+               
+              <button>Submit</button>
+             </div>
+          
+          </div>
+          
+          </div>
+          
+          <div class="row copyright">
+            <div class="footer-menu">
+          
+            <a href=""><button>Karnataka</button></a>
+            <a href=""><button>Tamil Nadu</button></a>
+            <a href=""><button>Maharashtra</button></a>
+            <a href=""><button>Noida</button></a>
+            <a href=""><button>Telangana</button></a>
+            <a href=""><button>Odisha</button></a>
+            <a href=""><button>Chandigarh</button></a>
+            <a href=""><button>Gurgaon</button></a>
+            <a href=""><button>Thane</button></a>
+            <a href=""><button>Mumbai</button></a>
+            <a href=""><button>Bhopal</button></a>
+            <a href=""><button>Hyderabad Punjagutta</button></a>
+            <a href=""><button>Global</button></a>
+           </div>
+           
+           </div>
+          </footer>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script>
+      function student(x) {
+        if (x == 0)
+          document.getElementById("student").style.display = "inline-block";
+        document.getElementById("trainer").style.display = "none";
+        document.getElementById("counsellor").style.display = "none";
+        return;
+      }
+      function trainer(x) {
+        if (x == 0)
+          document.getElementById("trainer").style.display = "inline-block";
+        document.getElementById("student").style.display = "none";
+        document.getElementById("counsellor").style.display = "none";
+
+        return;
+      }
+      function counsellor(x) {
+        if (x == 0)
+          document.getElementById("counsellor").style.display = "inline-block";
+        document.getElementById("trainer").style.display = "none";
+        document.getElementById("student").style.display = "none";
+
+        return;
+      }
+      var sbtn=document.getElementById('sbtn');
+      console.log(sbtn)
+      function sjoinclass(){
+        confirm('this will be your 36th session')
+      }
+    </script>
+  </body>
+</html>
